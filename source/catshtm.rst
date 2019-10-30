@@ -1,6 +1,6 @@
 
-catsHTM XMatch API
-==================
+catsHTM XMatch
+==============
 
 Cats Service provides conesearch and crossmatch over different `catalogs <#available-catalogs>`_. This service is based on `catsHTM <https://github.com/maayane/catsHTM>`_.
 

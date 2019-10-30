@@ -1,6 +1,6 @@
 
-ALeRCE AVRO/Stamps Access API
-=============================
+ALeRCE AVRO/Stamps
+==================
 
 API to get an specified avro/stamp from alert files of an ZTF Object. This API uses **GET requests** parameters.
 

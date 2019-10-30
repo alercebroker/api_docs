@@ -1,6 +1,6 @@
 
-ALeRCE ZTF DB API
-=================
+ALeRCE ZTF DB
+=============
 
 This API gives access to ALeRCE Annotated ZTF API, with corrected magnitudes, objects statistics and the object data.
 
