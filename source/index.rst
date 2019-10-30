@@ -7,6 +7,8 @@ Welcome to ALeRCE API Documentation's documentation!
 ====================================================
 
 .. toctree::
+   ztf_db
+   avro
    :maxdepth: 2
    :caption: Contents:
 
