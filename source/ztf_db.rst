@@ -33,11 +33,15 @@ The current fields to query the db are the following:
                max: int
            },
            //Late Classifier (Random Forest)
-           classrf: ["CEPH","DSCT","EB","LPV","RRL","SNe","Other"] or int,
+           classrf: int,
            pclassrf: float [0-1],
            //Early Classifier (Stamp Classifier)
-           classearly: ["AGN","SN","VS","asteroid","bogus"] or int,
+           classearly: int,
            pclassearly: float [0-1],
+           [min|max|median|mean]_[magpsf|magap|magpsf_corr]_[g|r]: {
+                min: float magnitude,
+                max: float magnitude
+           }
        },
        //Coordinate based search (RA,DEC) and Search Radius.
        coordinates:{

@@ -3,8 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ALeRCE API Documentation's documentation!
+ALeRCE API Documentation
 ====================================================
+
+[ALeRCE](http://alerce.science/) is a Chilean-lead alert Broker for Time-domain Astronomy.
+
+To provide a simple access to ALeRCE services, we implemented small APIs for each service. The API are
+for public access and doesn't need authentication for almost all services.
+
+This APIs are currently beign used in [ZTF-Explorer](https://alerce.online/) and [SN Hunter](https://snhunter.alerce.online/)
+
 
 .. toctree::
    ztf_db
