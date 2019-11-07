@@ -30,7 +30,7 @@ Get an specified avro information as a JSON file
 
 .. code-block::
 
-       curl http://avro.alerce.online/get_stamp_info?oid=ZTF19abguqsi&candid=928474644915015004
+       curl http://avro.alerce.online/get_avro_info?oid=ZTF19abguqsi&candid=928474644915015004
 
 Parameters:
 
