@@ -98,8 +98,7 @@ For crossmatching over all catalogs, the same rule of providing a radius or not 
 Available catalogs:
 -------------------
 
-For catalogs that do not have a value listed, the default radius is 50 arcsec.
-
+For catalogs that have a value listed, this value is the radius used for cone search and cross-match. Otherwise, the default radius of 50 arcsec is used.
 
 * AAVSO_VSX
 * AKARI
