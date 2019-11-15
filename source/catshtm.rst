@@ -7,9 +7,7 @@ Cats Service provides conesearch and crossmatch over different `catalogs <#avail
 Arguments and units in requests
 -------------------------------
 
-The arguments needed are almost always the name of the ``catalog``\ , ``ra`` and ``dec``
-
-The units of the arguments in the catsHTM API are the following:
+The parameters and units in the catsHTM API are the following:
 
 ==================      ========
 Parameter               unit
@@ -23,19 +21,19 @@ radius  (optional)      arcsec
 Conesearch
 ----------
 
-Do a conesearch with an specific catalog or all of them
+Cone search over a specific catalog or over all of them.
 
 .. code-block::
 
   GET catshtm.alerce.online/conesearch[_all]
 
 
-Conesearch in a catalog
+Conesearch over a catalog
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block::
 
-  curl "catshtm.alerce.online/conesearch?catalog=GAIADR1&ra=357.733730043103&dec=14.2051386793103&radius=100"
+  curl "catshtm.alerce.online/conesearch?catalog=GAIADR1&ra=357.73373&dec=14.20514&radius=100"
 
 
 Conesearch over all catalogs
@@ -43,13 +41,13 @@ Conesearch over all catalogs
 
 .. code-block::
 
-  curl "catshtm.alerce.online/conesearch_all?ra=357.733730043103&dec=14.2051386793103&radius=10"
+  curl "catshtm.alerce.online/conesearch_all?ra=357.73373&dec=14.20514&radius=10"
 
 
 Crossmatch
 ----------
 
-Do a conesearch and get the closest object for a catalog or all of them.
+Get the closest object, given RA and Dec, for a catalog or all of them.
 
 .. code-block::
 
@@ -67,14 +65,14 @@ Since the radius argument is optional, there are two ways to perform crossmatch 
 
 .. code-block::
 
-   curl "catshtm.alerce.online/crossmatch?catalog=SDSSDR10&ra=357.733730043103&dec=14.2051386793103&radius=10"
+   curl "catshtm.alerce.online/crossmatch?catalog=SDSSDR10&ra=357.73373&dec=14.20514&radius=10"
 
 
 #. Not providing one:
 
 .. code-block::
 
-   curl "catshtm.alerce.online/crossmatch?catalog=SDSSDR10&ra=357.733730043103&dec=14.2051386793103"
+   curl "catshtm.alerce.online/crossmatch?catalog=SDSSDR10&ra=357.73373&dec=14.20514"
 
 If a radius is provided, then that value is used. If not, the default value for that catalog is used. See default values in `Available catalogs <#available-catalogs>`_
 
@@ -88,14 +86,14 @@ For crossmatching over all catalogs, the same rule of providing a radius or not 
 
 .. code-block::
 
-   curl "catshtm.alerce.online/crossmatch_all?ra=357.733730043103&dec=14.2051386793103&radius=100"
+   curl "catshtm.alerce.online/crossmatch_all?ra=357.73373&dec=14.20514&radius=100"
 
 
 #. Without radius:
 
 .. code-block::
 
-   curl "catshtm.alerce.online/crossmatch_all?ra=357.733730043103&dec=14.2051386793103"
+   curl "catshtm.alerce.online/crossmatch_all?ra=357.73373&dec=14.20514"
 
 Available catalogs:
 -------------------
