@@ -6,12 +6,12 @@
 ALeRCE API Documentation
 ====================================================
 
-`ALeRCE <http://alerce.science/>`_ is a Chilean-lead alert Broker for Time-domain Astronomy.
+`ALeRCE <http://alerce.science/>`_ is a Chilean-lead alert broker for time-domain astronomy.
 
-To provide a simple access to ALeRCE services, we implemented small APIs for each service. The API are
-for public access and doesn't need authentication for almost all services.
+ALeRCE implements different services that can be accessed through APIs. These APIs are
+for public use and most of them do not require authentication.
 
-This APIs are currently beign used in `ZTF-Explorer <https://alerce.online/>`_ and `SN Hunter <https://snhunter.alerce.online/>`_ .
+The APIs are currently being used in `ZTF-Explorer <https://alerce.online/>`_ and `SN Hunter <https://snhunter.alerce.online/>`_ .
 
 
 .. toctree::
