@@ -2,7 +2,7 @@
 catsHTM XMatch
 ==============
 
-Cats Service provides conesearch and crossmatch over different `catalogs <#available-catalogs>`_. This service is based on `catsHTM <https://github.com/maayane/catsHTM>`_.
+Cats Service provides cone search and cross-match on different `catalogs <#available-catalogs>`_. This service is based on `catsHTM <https://github.com/maayane/catsHTM>`_.
 
 Arguments and units in requests
 -------------------------------
@@ -18,17 +18,17 @@ dec                     degrees
 radius  (optional)      arcsec
 ==================      ========
 
-Conesearch
+Cone search
 ----------
 
-Cone search over a specific catalog or over all of them.
+Cone search on a specific catalog or on all of them.
 
 .. code-block::
 
   GET catshtm.alerce.online/conesearch[_all]
 
 
-Conesearch over a catalog
+Cone search on a catalog
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block::
@@ -36,7 +36,7 @@ Conesearch over a catalog
   curl "catshtm.alerce.online/conesearch?catalog=GAIADR1&ra=357.73373&dec=14.20514&radius=100"
 
 
-Conesearch over all catalogs
+Cone search on all catalogs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block::
@@ -44,7 +44,7 @@ Conesearch over all catalogs
   curl "catshtm.alerce.online/conesearch_all?ra=357.73373&dec=14.20514&radius=10"
 
 
-Crossmatch
+Cross-match
 ----------
 
 Get the closest object, given RA and Dec, for a catalog or all of them.
@@ -55,13 +55,13 @@ Get the closest object, given RA and Dec, for a catalog or all of them.
 
 
 
-Crossmatch in a catalog
+Cross-match on a catalog
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Since the radius argument is optional, there are two ways to perform crossmatch in a catalog.
+Since the radius argument is optional, there are two ways to perform cross-match on a catalog.
 
 
-#. Providing a radius:
+#. Providing a value for the radius:
 
 .. code-block::
 
@@ -76,10 +76,10 @@ Since the radius argument is optional, there are two ways to perform crossmatch 
 
 If a radius is provided, then that value is used. If not, the default value for that catalog is used. See default values in `Available catalogs <#available-catalogs>`_
 
-Crossmatch over all catalogs
+Cross-match on all catalogs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For crossmatching over all catalogs, the same rule of providing a radius or not applies. Therefore, there are two ways to send the request.
+For cross-matching on all catalogs, the same rule of providing a radius or not applies. Therefore, there are two ways to send the request.
 
 
 #. With radius:
