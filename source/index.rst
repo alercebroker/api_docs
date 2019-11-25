@@ -6,7 +6,7 @@
 ALeRCE API Documentation
 ====================================================
 
-`ALeRCE <http://alerce.science/>`_ is a Chilean-lead alert broker for time-domain astronomy.
+`ALeRCE <http://alerce.science/>`_ is a Chilean-led alert broker for time-domain astronomy.
 
 ALeRCE implements different services that can be accessed through APIs. These APIs are
 for public use and most of them do not require authentication.
