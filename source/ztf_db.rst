@@ -19,43 +19,40 @@ The current fields to query the db are the following:
 .. code-block::
 
    {
-   total: number (if not set the total is counted and the query is slower),
-   records_per_pages: number (default 20),
-   page: number (default 1),
-   sortBy: string columnName (default nobs),
-   query_parameters:{
-       filters:{
-           //ZTF Object id
-           oid: "ZTFXXXXXX",
-           //Number of detections
-           nobs: {
-               min: int
-               max: int
-           },
-           //Late Classifier (Random Forest)
-           classrf: int,
-           pclassrf: float [0-1],
-           //Early Classifier (Stamp Classifier)
-           classearly: int,
-           pclassearly: float [0-1],
-           [min|max|median|mean]_[magpsf|magap|magpsf_corr]_[g|r]: {
-                min: float magnitude,
-                max: float magnitude
-           }
-           //Coordinate based search (RA,DEC) and Search Radius.
-           coordinates:{
-               ra: float degrees,
-               dec: float degrees,
-               sr: float degrees
-           },
-       },
-       dates:{
-           //First detection (Discovery date)
-           firstmjd: {
-            min: float mjd,
-            max: float mjd
-           }
+      total :  number (if not set the total is counted and the query is slower) ,
+      records_per_pages :  number (default 20) ,
+      page :  number (default 1) ,
+      sortBy :  :py:class:`str` columnName (default nobs) ,
+      query_parameters : {
+        filters : {
+         //ZTF object id
+          oid :  ZTFXXXXXX ,
+         //Number of detections
+          nobs : {
+            min :  int ,
+            max :  int 
+         },
+         //Late Classifier (Random Forest)
+          classrf :  string or int ,
+          pclassrf :  float [0-1] ,
+         //Early Classifier (Stamp Classifier)
+          classearly :  list, string or int ,
+          pclassearly :  float [0-1] ,
+        } 
+        //Coordinate based search (RA,DEC) and Search Radius.
+        coordinates : {
+            ra :  float degrees ,
+            dec :  float degrees ,
+            sr :  float degrese 
+        },
+        dates : {
+        //First detection (Discovery date)
+          firstmjd : {
+            min :  float mjd ,
+            max :  float mjd 
+         }
        }
+     }
    }
 
 The response contains the following:
