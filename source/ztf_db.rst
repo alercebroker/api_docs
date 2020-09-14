@@ -42,12 +42,12 @@ The current fields to query the db are the following:
                 min: float magnitude,
                 max: float magnitude
            }
-       //Coordinate based search (RA,DEC) and Search Radius.
-       coordinates:{
-           ra: float degrees,
-           dec: float degrees,
-           sr: float degrees
-         },
+           //Coordinate based search (RA,DEC) and Search Radius.
+           coordinates:{
+               ra: float degrees,
+               dec: float degrees,
+               sr: float degrees
+           },
        },
        dates:{
            //First detection (Discovery date)
